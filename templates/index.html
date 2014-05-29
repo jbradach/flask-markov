@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <p>
+     {% for line in result %}
+       {{ line }}<br />
+     {% endfor %}
+    </p>
+    <p>
+      <input type="button" value="Generate new results" onClick="window.location.reload()">
+    </p>
+{% endblock %}
